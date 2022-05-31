@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:id="@+id/frameLayout">
+
+
+    <Button
+        android:id="@+id/buttonHomeToInside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+
+        android:text="vamos"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre"
+        android:hint="Nombre"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHomeToInside"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aPaterno"
+        android:hint="Apellido Paterno"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/aMaterno"
+        android:hint="Apellido Materno"
+        app:layout_constraintTop_toBottomOf="@+id/aPaterno"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edad"
+        android:hint="Edad"
+        app:layout_constraintTop_toBottomOf="@+id/aMaterno"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/correo"
+        android:hint="Correo"
+        app:layout_constraintTop_toBottomOf="@+id/edad"
+
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

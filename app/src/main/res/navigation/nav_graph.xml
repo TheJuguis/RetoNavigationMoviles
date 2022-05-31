@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigationrepe.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_insideHome"
+            app:destination="@id/insideHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/insideHome"
+        android:name="com.example.navigationrepe.InsideHome"
+        android:label="fragment_inside_home"
+        tools:layout="@layout/fragment_inside_home" >
+        <argument
+            android:name="argumentoPasado"
+            app:argType="string"
+            android:defaultValue="aaaa" />
+        <argument
+            android:name="nombrePasado"
+            app:argType="string"
+            android:defaultValue="nombre" />
+        <argument
+            android:name="aMaPasado"
+            app:argType="string" />
+        <argument
+            android:name="edadPasado"
+            app:argType="string" />
+        <argument
+            android:name="correoPasado"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.navigationrepe.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/setingsFragment"
+        android:name="com.example.navigationrepe.setingsFragment"
+        android:label="fragment_setings"
+        tools:layout="@layout/fragment_setings" />
+</navigation>
